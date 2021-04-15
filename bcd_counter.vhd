@@ -9,13 +9,13 @@ entity bcd_counter is
 	-- generic (
            -- N :  std_logic_vector:=x"5F5E0FF"; -- count from 0 to M-1
            -- M : integer := 26   -- M bits required to count upto N i.e. 2**M >= N
-	   -- anodes : integer :=4            7 segment display anodes   ( 4 segments ) 
+	   -- anodes : integer :=4            7 segment display anodes   ( 4 bit 7 segments ) 
 	   -- cathodes : integer := 8         7 segment display cathodes (abcdefg and DP) 
     ); -- uncomment the generic section to customize the size M and the N ( which is M-1 ) value where the counting should restart 
     
     Port ( clk_in : in  STD_LOGIC;  -- clock input 
            rst : in  STD_LOGIC;     -- reset input 
-           an : out  STD_LOGIC_VECTOR (anodes-1 downto 0);  -- number of segments 
+           an : out  STD_LOGIC_VECTOR (anodes-1 downto 0);   
            sseg : out  STD_LOGIC_VECTOR (cathodes-1 downto 0) 
 			  );
 end bcd_counter;
