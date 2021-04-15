@@ -8,8 +8,8 @@ entity disp_mux is
 -- generic (
            -- X : integer :=8           inputs of X bits 
 	   -- anodes : integer :=4            7 segment display anodes   ( 4 bit 7 segment  ) 
-	   -- cathodes : integer := 8         7 segment display cathodes (abcdefg and DP) 
-    ); -- uncomment the generic section to customize the size M and the N ( which is M-1 ) value where the counting should restart 
+	   -- cathodes : integer := 8         7 segment display cathodes (abcdefg and DP) );
+   -- uncomment the generic section to customize the size of inputs , and the size of 7 segments  
    port(
       
       clk, reset: in std_logic; -- input clock and reset 
