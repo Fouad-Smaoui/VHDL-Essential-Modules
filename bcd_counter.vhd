@@ -79,6 +79,6 @@ begin
 						"1000010" when "1101" ,                      --D
 						"0110000" when "1110",                       --E
 						"0111000" when others;                       --F
-			sseg(7) <= '0'; -- for DP 
+			sseg(7) <= '0'; -- for decimal point DP 
 end cntr_arch;
 
