@@ -1,7 +1,8 @@
+-- This is a custom module for one-process state machine.
 process(Clk) is
 begin
     if rising_edge(Clk) then
-        if nRst = '0' then
+        if reset = '0' then
             State <= <reset_state>;
         else
             case State is
